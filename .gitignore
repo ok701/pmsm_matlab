@@ -5,7 +5,28 @@
 slprj/
 work/
 codegen/
+rtwbuild/
+*_ert_rtw/
+*_grt_rtw/
+*_rtw/
+
+# Build artifacts
+*.hex
+*.out
+*.elf
+*.dwo
+*.bin
+*.o
+*.obj
+*.map
+*.log
+*.tmp
+
+# MATLAB autosave / cache
 *.asv
+*.SimulinkCache.mat
+*.matlab
+*.autosave
+
+# Local development folders
 dev/
-mcb_pmsm_foc_qep_f28379d_ert_rtw/
-mcb_pmsm_qep_offset_f28379d_ert_rtw/
