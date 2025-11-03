@@ -11,15 +11,15 @@ Start with the MATLAB Academy tutorial:
 [**Introduction to Motor Control**](https://matlabacademy.mathworks.com/kr/details/introduction-to-motor-control/otslimc)
 
 All example codes are located in the [simulation/tutorial/](simulation/tutorial/)
-  so you can run them directly.
-
+so you can run them directly. Make sure to run the `.mat` file before opening the `.slx` model.
 
 
 ### Step 2: Reinforcement Learning
 
+The following example demonstrates replacing the PI controller in the current loop with a TD3 reinforcement learning agent:  
 [**TD3 Reinforcement Learning for PMSM Control**](https://kr.mathworks.com/help/reinforcement-learning/ug/train-td3-agent-for-pmsm-control.html)
 
- Twin Delayed Deep Deterministic Policy Gradient (TD3) implementation for PMSM control is in [simulation/rl/](simulation/rl/).  
+Refer to [simulation/rl/](simulation/rl/) for implementation details.
 
 
 
