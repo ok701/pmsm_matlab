@@ -1,1 +1,0 @@
-var modelInfo = {model:"mcb_pmsm_foc_qep_f28379d"};var modelHierarchy=[{model:"mcb_pmsm_foc_qep_f28379d",relativePath:"_internal.html",parent:"null"},];var AddCode = true;var ProtectedModel = false;
