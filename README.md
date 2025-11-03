@@ -1,21 +1,37 @@
-# PMSM-RL-Control
+# Learn PMSM Control
 
-This repository integrates modern Reinforcement Learning (RL) algorithms, specifically the Twin Delayed Deep Deterministic Policy Gradient (TD3), with traditional motor control methods for PMSM control based on Field-Oriented Control (FOC). The control framework incorporates PI control, Voltage-by-Frequency (V/f) control, and Model Predictive Control (MPC), with RL replacing the current control component to provide an innovative alternative to conventional methods.
+Permanent Magnet Synchronous Motor (PMSM) control in MATLAB is well described in the  
+👉 [**MATLAB Motor Control Blockset**](https://kr.mathworks.com/help/mcb/index.html?s_tid=CRUX_lftnav).
 
-## Structure
+If you're not sure where to start, follow this order to go from traditional speed control to reinforcement learning.
 
-The project is divided into two main parts:
-- **Simulation**: Conducted using MATLAB 2023a.
-- **Deployment**: Conducted using MATLAB 2024b.
+### Step 1: Learn the Basics
 
-## References
+Start with the MATLAB Academy tutorial:  
+👉 [**Introduction to Motor Control**](https://matlabacademy.mathworks.com/kr/details/introduction-to-motor-control/otslimc)
 
-The project is based on MATLAB Motor Control Blockset tutorials. For more details, refer to:  
-[MATLAB Motor Control Blockset](https://kr.mathworks.com/help/mcb/index.html?s_tid=CRUX_lftnav)
+All example codes are located in the [simulation/tutorial/](simulation/tutorial/)
+ directory so you can run them directly.
 
-## Real System Hardware
 
-The real system is implemented using the following hardware components:
-- **Controller**: TI LAUNCHXL-F28379D
-- **Driver**: TI BOOSTXL-DRV8305
-- **Motor**: Teknic M-2310P
+
+### Step 2: Using Reinforcement Learning
+
+The **Twin Delayed Deep Deterministic Policy Gradient (TD3)** implementation for PMSM control is in [simulation/rl/](simulation/rl/).  
+Learn more here:  
+👉 [**TD3 Reinforcement Learning for PMSM Control**](https://kr.mathworks.com/help/reinforcement-learning/ug/train-td3-agent-for-pmsm-control.html)
+
+
+
+### Step 3: Deploy in Hardware
+Deployment of FOC (Field-Oriented Control) speed control can be found under the [deploy/](deploy/) directory.
+
+#### Hardware Setup
+- **Controller:** TI LAUNCHXL-F28379D  
+- **Driver:** TI BOOSTXL-DRV8305  
+- **Motor:** Teknic M-2310P  
+
+
+
+
+All tests were conducted using **MATLAB 2024b**.
